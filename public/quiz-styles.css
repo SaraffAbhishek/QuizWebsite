@@ -1,0 +1,60 @@
+/* quiz-styles.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, #ffcccc, #ff99cc); /* Gradient Background */
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8); /* Background Color with Opacity */
+    text-align: center;
+}
+
+h1 {
+    color: #333; /* Text Color */
+    font-size: 2.5em; /* Further Increased Font Size */
+}
+
+.subject-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.subject-button {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* Align Photos to the Left */
+    width: 90%;
+    max-width: 400px; /* Set Maximum Width */
+    margin: 10px auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9); /* Background Color with Opacity */
+    color: #333; /* Text Color */
+    border: 2px solid rgba(0, 0, 0, 0.2); /* Border Style */
+    border-radius: 15px; /* Rounded Corners */
+    cursor: pointer;
+}
+
+.subject-button img {
+    width: 100px; /* Larger Photo Size */
+    height: 100px; /* Larger Photo Size */
+    margin-right: 20px;
+}
+
+.subject-text {
+    font-size: 2.1em; /* Further Increased Font Size for Subjects */
+}
+
+.subject-button:hover {
+    border-color: rgba(0, 0, 0, 0.5); /* Hover Border Color */
+}
+
+.subject-text {
+    display: inline-block;
+    vertical-align: middle;
+}

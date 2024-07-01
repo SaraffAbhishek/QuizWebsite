@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Question Form</title>
+</head>
+<body>
+    <h1>Add Question to Quiz</h1>
+    <form id="addQuestionForm">
+        <label for="quizId">Quiz ID:</label>
+        <input type="text" id="quizId" name="quizId" required><br><br>
+
+        <label for="questionText">Question:</label>
+        <input type="text" id="questionText" name="questionText" required><br><br>
+
+        <label for="optionA">Option A:</label>
+        <input type="text" id="optionA" name="optionA" required><br><br>
+
+        <label for="optionB">Option B:</label>
+        <input type="text" id="optionB" name="optionB" required><br><br>
+
+        <label for="optionC">Option C:</label>
+        <input type="text" id="optionC" name="optionC" required><br><br>
+
+        <label for="optionD">Option D:</label>
+        <input type="text" id="optionD" name="optionD" required><br><br>
+
+        <label for="correctAnswer">Correct Answer:</label>
+        <select id="correctAnswer" name="correctAnswer">
+            <option value="A">A</option>
+            <option value="B">B</option>
+            <option value="C">C</option>
+            <option value="D">D</option>
+        </select><br><br>
+
+        <button type="submit">Add Question</button>
+    </form>
+
+
+    <script src="/addQuestion.js"></script> <!-- Link to the JavaScript file -->
+</body>
+</html>

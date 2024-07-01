@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teacher Login Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="form-container">
+        <div class="login-form form">
+            <h2>Teacher Login Page</h2>
+            <form id="loginForm" action="/login" method="POST">
+                <input type="text" placeholder="Username" name="username" required>
+                <input type="password" placeholder="Password" name="password" required>
+                <button type="submit">Login</button>
+            </form>
+            <p>Don't have an account? <a href="#" class="signup-link">Sign Up</a></p>
+            <p><button id="backButton">Go Back</button></p>
+        </div>
+        <div class="signup-form form hidden">
+            <h2>Teacher Sign Up</h2>
+            <form id="signupForm" action="/signup" method="POST">
+                <input type="text" placeholder="Username" name="username" required>
+                <input type="email" placeholder="Email" name="email" required>
+                <input type="password" placeholder="Password" name="password" required>
+                <button type="submit">Sign Up</button>
+            </form>
+            <p>Already have an account? <a href="#" class="login-link">Login</a></p>
+        </div>
+        
+    </div>
+
+    <script src="script3.js"></script>
+</body>
+</html>

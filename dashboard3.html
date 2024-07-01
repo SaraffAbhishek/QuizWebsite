@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="/admin-styles.css">
+</head>
+<body>
+    <div class="container">
+        <button id="logoutButton">Logout</button>
+        <h1>Admin Dashboard</h1>
+
+        <div class="section">
+            <h2>Manage Teachers</h2>
+            <form id="addTeacherForm">
+                <input type="text" id="teacherEmail" placeholder="Enter Teacher Email" required>
+                <button type="submit">Add Teacher Email</button>
+            </form>
+            <ul id="teacherList"></ul>
+        </div>
+
+        <div class="section">
+            <h2>User Details</h2>
+            <table id="userTable">
+                <thead>
+                    <tr>
+                        <th>User ID</th>
+                        <th>Username</th>
+                        <th>Email</th>
+                    </tr>
+                </thead>
+                <tbody id="userTableBody"></tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="/admin-dashboard.js"></script>
+</body>
+</html>
